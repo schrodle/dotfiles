@@ -9,8 +9,13 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$'
 
+# Editor
 export VISUAL='nvim'
 export EDITOR='nvim'
 alias vi='nvim'
 alias vim='nvim'
+
+# Common sudo commands
 alias pacman='sudo pacman'
+alias cpupower='sudo cpupower'
+alias undervolt='sudo undervolt'
