@@ -21,6 +21,7 @@ alias cpupower='sudo cpupower'
 alias undervolt='sudo undervolt'
 
 export PATH=$PATH:/home/schro/.spicetify
-
+export SDL_VIDEODRIVER="wayland,x11"
 # Created by `pipx` on 2025-01-07 16:38:44
 export PATH="$PATH:/home/schro/.local/bin"
+alias reboot='sudo reboot now'
