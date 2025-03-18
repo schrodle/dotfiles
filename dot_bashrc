@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
-
+command fastfetch
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -12,16 +12,12 @@ PS1='\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 # Editor
 export VISUAL='nvim'
 export EDITOR='nvim'
-alias vi='nvim'
-alias vim='nvim'
 
-# Common sudo commands
-alias pacman='sudo pacman'
-alias cpupower='sudo cpupower'
-alias undervolt='sudo undervolt'
+source $HOME/.bashrc.d/aliases.bash
+source $HOME/.bashrc.d/env.bash
 
 export PATH=$PATH:/home/schro/.spicetify
 export SDL_VIDEODRIVER="wayland,x11"
 # Created by `pipx` on 2025-01-07 16:38:44
 export PATH="$PATH:/home/schro/.local/bin"
-alias reboot='sudo reboot now'
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/home/schro/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:/home/schro/.local/bin:/home/schro/.spicetify:/home/schro/.local/bin:~/.cargo/bin/
